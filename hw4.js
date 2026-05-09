@@ -14,6 +14,19 @@ document.getElementById('today').innerText = today.toLocaleDateString('en-US', {
     day: 'numeric'
 });
 
+const inputs = [
+    { id: "fname",    cookieName: "firstName" },
+    { id: "mini",     cookieName: "middleInitial" },
+    { id: "lname",    cookieName: "lastName" },
+    { id: "email",    cookieName: "email" },
+    { id: "phone",    cookieName: "phone" },
+    { id: "address1", cookieName: "address1" },
+    { id: "address2", cookieName: "address2" },
+    { id: "city",     cookieName: "city" },
+    { id: "zcode",    cookieName: "zipCode" },
+    { id: "uid",      cookieName: "userId" }
+];
+
 function validateDob() {
     dob = document.getElementById("dob");
     let date = new Date(dob.value);
